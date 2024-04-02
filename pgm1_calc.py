@@ -28,6 +28,11 @@ def mul(a,b):
 def div(a,b):
     print(a/b)
 
+# In[5]
+
+
+def mod(a,b):
+    print(a%b)
 
 # In[10]:
 
@@ -35,7 +40,7 @@ def div(a,b):
 while(True):
     num1=int(input('enter 1st no: '))
     num2=int(input('enter 2nd no: '))
-    ops=input('Enter operation you want to perform: +,-,/,* : ')
+    ops=input('Enter operation you want to perform: +,-,/,*,% : ')
     if(ops=='+'):
         add(num1,num2)
     elif(ops=='-'):
@@ -44,6 +49,8 @@ while(True):
         mul(num1,num2)  
     elif(ops=='/'):
         div(num1,num2)
+    elif(ops == '%'):
+        mod(num1, num2)
     else:
         print('invalid operator')
     calc=input('want to perform an operation again:(yes/no)')
